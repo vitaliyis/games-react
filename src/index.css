@@ -1,13 +1,80 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #e9ecef;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.loto-wrap .card{
+    width: 75%;
+}
+
+.card-loto div {
+    /*border: 1px solid black;*/
+    background-color: #fff;
+}
+
+.card-loto {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    border: 10px solid lightgray;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 3rem 3rem 3rem;
+    grid-gap: 1px;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: #212529;
+}
+
+.card-loto + .card-loto {
+    margin-top: 15px;
+}
+
+.loto-color-border {
+    border-color: darkkhaki;
+}
+
+.card-loto-people div {
+    cursor: pointer;
+}
+
+.scoreboard-loto {
+    /*width: 50%;*/
+    margin: 0 auto;
+}
+
+.scoreboard-loto-time, .scoreboard-loto-number {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.scoreboard-loto-time {
+    color: #dc3545;
+}
+
+.loto-wrap .modal.show {
+    /*display: block;*/
+}
+
+@media (max-width: 991px) {
+    .card-loto {
+        font-size: 25px;
+        grid-template-rows: 2.5rem 2.5rem 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-loto {
+        font-size: 20px;
+        grid-template-rows: 2rem 2rem 2rem;
+    }
+
+    .loto-wrap .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .scoreboard-loto-time, .scoreboard-loto-number {
+        font-size: 26px;
+    }
 }

@@ -1,0 +1,81 @@
+Loto
+Настройка игры
+	- количество игроков: человек и компьютер
+	- количество карточек у игрока 2
+	- скорость игры в секундах: 1 - 5
+
+1. Разработка карточки
+2. Экран делится на две части
+
+На вход CardsList будет приходить количество карточек, массив с рандомными значениями [1-27]
+Массив из 27 ячеек должен иметь 15 заполненых значений в диаплзоне 1-99
+Состояние лото:
+	state = {
+		quantityCards: null,
+		valuesCardsPeople: null,
+		valuesCardsComputer: null,
+		numberFilledCardPeople: null,
+		numberFilledCardComputer: null
+		}
+
+
+<div className="col-md-6 mt-md-0 mt-3">
+        <div className="card-loto loto-color-border">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div></div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+        </div>
+        <div className="card-loto mt-3 loto-color-border">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>99</div>
+          <div></div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+        </div>
+      </div>
